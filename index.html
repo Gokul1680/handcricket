@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link rel="stylesheet" href="handcricket.css">
+
+</head>
+<body>
+    <div id="head" class="head">
+        <p>Hand Cricket</p>
+        <p>You Vs Computer</p>
+        <p>One Who Scores High Will Win! :)</p>
+    </div>
+    <div id="container" class="container">
+        <div class="sbcontainer" id="sbcontainer">
+            <p id="sb">Score Board</p>
+                <div class="scoreboard">
+                <p id="user" class="label">You</p>
+                <p id="comp" class="label">Comp</p>
+                <p class="score"> <span id="user_score">0</span>:<span id="comp_score">0</span></p>
+                </div>
+        </div>
+        <div id="subcontainer"> 
+            <div id="buttons" class="buttons">
+                <button class="btn" value="1" onclick="myfunc(0)">0</button>
+                <button class="btn" value="1" onclick="myfunc(1)">1</button>
+                <button class="btn" value="1" onclick="myfunc(2)">2</button>
+                <button class="btn" value="1" onclick="myfunc(3)">3</button>
+                <button class="btn" value="1" onclick="myfunc(4)">4</button>
+                <button class="btn" value="1" onclick="myfunc(5)">5</button>
+                <button class="btn" value="1" onclick="myfunc(6)">6</button>
+
+             </div>
+        </div>
+        <div class="analysis" id="analysis">
+            <p>user:<span id="usermove"></span><br><br>comp:<span id="compmove"></span></p>
+        </div>
+        
+    </div>
+        <div id="index" class="index">
+            <button class="btn1" value="bat" onclick="decide('bat')"><img class="icons" src="bat.png"><p> Batting</p></button>
+            <button class="btn1" value="bowl" onclick="decide('bowl')"><img class="icons" src="cricket.png"> <p>Bowling</p></button>
+        </div>
+        <div id="message" class="message">
+            <h1 id="msg"></h1>
+        </div>
+   <script src="handcricket.js"></script>
+</body>
+</html>
